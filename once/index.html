@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Directory Manager</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI-Powered Directory Management</h1>
+    
+    <div class="button-group">
+      <button onclick="showForm('add')"><i class="fas fa-plus-circle"></i> Add Entry</button>
+      <button onclick="showForm('remove')"><i class="fas fa-minus-circle"></i> Remove Entry</button>
+      <button onclick="showForm('update')"><i class="fas fa-sync-alt"></i> Update Entry</button>
+      <button onclick="listEntries()"><i class="fas fa-list"></i> List Entries</button>
+      <button onclick="showForm('createFile')"><i class="fas fa-file-alt"></i> Create File</button>
+      <button onclick="showForm('removeFile')"><i class="fas fa-trash-alt"></i> Remove File</button>
+      <button onclick="exitSystem()"><i class="fas fa-power-off"></i> Exit</button>
+    </div>
+
+    <div id="form-container"></div>
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
+
+
